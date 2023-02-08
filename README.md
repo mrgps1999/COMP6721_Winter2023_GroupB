@@ -24,21 +24,17 @@ NAME AND THEIR CLASSES
 
 **Data Processing:**
 	Resize: consists of variable-resolution images, while our system requires a constant input dimensionality. There for we are going to down sampled the images to  	 fixed resolution which is suitable for architecture.
-	
 	Tensor: convert the NumPy images to torch images.
-	
 	Normalize: change the range of pixels.
-	
 	ColorJitter: To generate images with randomly brightness contrast and saturation 
-	
 	Scale Conversion: This is a trial. First, we train the model with Gray scale image if it is not giving good result we will move to RGB.
 	Moreover, to handle imbalance dataset we will use other augmentation techniques if needed.
 	
 **Training models:**
-	We have chosen MobilenetV2, ResNet18 and DenseNet121. The reason for choosing this architecture is these are light weight architecture and computationally 	light except DenseNet121. These architectures are commonly used architecture for classification because of the accuracy. We will also perform the transfer 	   	learning for any 2 Architecture. We will use different hyperparameters such as Learning Rate, Cost functions, Batch Size, Number of iterations (Epochs) in 	   	training, Optimizers.
+We have chosen MobilenetV2, ResNet18 and DenseNet121. The reason for choosing this architecture is these are light weight architecture and computationally 	light except DenseNet121. These architectures are commonly used architecture for classification because of the accuracy. We will also perform the transfer 	   	learning for any 2 Architecture. We will use different hyperparameters such as Learning Rate, Cost functions, Batch Size, Number of iterations (Epochs) in 	   training, Optimizers.
 
 **Model selection & Evaluation metrics:**
-	We will train the model till 100 epochs (may vary if taking time in training).Using tensor board loss and accuracy analysis, best epoch which has higher 	accuracy is going to selected for the predictions.
+We will train the model till 100 epochs (may vary if taking time in training).Using tensor board loss and accuracy analysis, best epoch which has higher 	accuracy is going to selected for the predictions.
 To compare two different model, we will use confusion metric, F1 score, Precision, recall and TSNE.
 
 **Applications of Derived results:**

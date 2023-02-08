@@ -20,25 +20,27 @@ NAME AND THEIR CLASSES
 ## 3.Methodology:
 
 **Data Cleaning:**
-
-These datasets have some noise. We are going to clean the dataset and after that we will split these datasets into training and testing set. Training set will be only used for training the dataset and testing dataset will be used for the evaluation of the dataset.
+	These datasets have some noise. We are going to clean the dataset and after that we will split these datasets into training and testing set. Training set will 	be only used for training the dataset and testing dataset will be used for the evaluation of the dataset.
 
 **Data Processing:**
-	Resize: consists of variable-resolution images, while our system requires a constant 			input dimensionality. There for we are going to down sampled the images to fixed 		 resolution which is suitable for architecture.
-	Tensor: convert the NumPy images to torch images.
-	Normalize: change the range of pixels.
-	ColorJitter: To generate images with randomly brightness contrast and saturation 
-	Scale Conversion: This is a trial. First, we train the model with Gray scale image if it 	 	is not giving good result we will move to RGB.
+	Resize: consists of variable-resolution images, while our system requires a constant input dimensionality. There for we are going to down sampled the images to  	 fixed resolution which is suitable for architecture.
 	
-	Moreover, to handle imbalance dataset we will use other augmentation techniques if 		needed.
+	Tensor: convert the NumPy images to torch images.
+	
+	Normalize: change the range of pixels.
+	
+	ColorJitter: To generate images with randomly brightness contrast and saturation 
+	
+	Scale Conversion: This is a trial. First, we train the model with Gray scale image if it is not giving good result we will move to RGB.
+	Moreover, to handle imbalance dataset we will use other augmentation techniques if needed.
 	
 **Training models:**
-We have chosen MobilenetV2, ResNet18 and DenseNet121. The reason for choosing this architecture is these are light weight architecture and computationally light except DenseNet121. These architectures are commonly used architecture for classification because of the accuracy. We will also perform the transfer learning for any 2 Architecture. We will use different hyperparameters such as Learning Rate, Cost functions, Batch Size, Number of iterations (Epochs) in training, Optimizers.
+	We have chosen MobilenetV2, ResNet18 and DenseNet121. The reason for choosing this architecture is these are light weight architecture and computationally 	light except DenseNet121. These architectures are commonly used architecture for classification because of the accuracy. We will also perform the transfer 	   	learning for any 2 Architecture. We will use different hyperparameters such as Learning Rate, Cost functions, Batch Size, Number of iterations (Epochs) in 	   	training, Optimizers.
 
 **Model selection & Evaluation metrics:**
-We will train the model till 100 epochs (may vary if taking time in training).Using tensor board loss and accuracy analysis, best epoch which has higher accuracy is going to selected for the predictions.
+	We will train the model till 100 epochs (may vary if taking time in training).Using tensor board loss and accuracy analysis, best epoch which has higher 	accuracy is going to selected for the predictions.
 To compare two different model, we will use confusion metric, F1 score, Precision, recall and TSNE.
 
 **Applications of Derived results:**
-In term of research, these all results can be used for research purpose not only 	in animal classification but also for the other image classifications. For instance, 	 	Results of Accuracy and error rates for different architecture on different types dataset 	 can be used for selection of architecture for future research. Moreover, this also shows 	 what types of hyper parameter can give better results. In terms of real application, 	          model can be used for the wildlife conservation, Zoo and agriculture. 
+In term of research, these all results can be used for research purpose not only in animal classification but also for the other image classifications. For instance, Results of Accuracy and error rates for different architecture on different types dataset can be used for selection of architecture for future research. Moreover, this also shows what types of hyper parameter can give better results. In terms of real application, model can be used for the wildlife conservation, Zoo and agriculture. 
 

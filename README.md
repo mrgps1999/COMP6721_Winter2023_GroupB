@@ -191,26 +191,26 @@ This will give a link for tensorboar summary.
 Below graph shows the loss of the Architecture on each dataset. Models with lower training loss are better as they are able to fit the training data more accurately. It is clear that MobileNetV2 has lowest training loss in all datasets.
 </p>
 
-![](Images/Loss.png)
+![](Graphs/Loss.png)
 
 <p align="justify">
 Below graph shows the accuracy of the model on the training data over a time. ShuffleNetV2 and MobileNeV2 achieved almost 98% traning accuracy while
 ResNet18 did not perform well. It is underfitted. The model cannot capture the underlying patterns and instead makes a high error assumption about the data.
 </p>
 
-![](Images/Accuracy.png)
+![](Graphs/Accuracy.png)
 
 <p align="justify">
 Plotting the high-dimensional representations of the data points in a low-dimensional space using t-SNE.
 </p>
 
-![](Images/tSNE.png)
+![](Graphs/tSNE.png)
 
 <p align="justify">
 Distribution of Datapoints after classification using Confusion Matrix.
 </p>
 
-![](Images/cnf.png)
+![](Graphs/cnf.png)
 
 <p align="justify">
 The models were evaluated based on testing accuracy, precision, recall, F1 scores, and training time. The MobileNetV2 architecture achieved the highest testing accuracy among all architectures on all three datasets. On Dataset1, MobileNetV2 achieved the highest testing accuracy of 87.60%, followed by ShuffleNetV2 with an accuracy of 82%, and ResNet18 with a low accuracy of 75.40%. On Dataset2, MobileNetV2 achieved an accuracy of 80.22%, followed by ShuffleNetV2 with an accuracy of 79.82%, and ResNet18 with an accuracy of 61.71%. Finally, on Dataset3, MobileNetV2 again achieved the highest accuracy of 73.69%, followed by ShuffleNetV2 with an accuracy of 72.98%, and ResNet18 with an accuracy of 53.50%. More Details for Precision, Recall is given in table.
@@ -235,7 +235,7 @@ The models were evaluated based on testing accuracy, precision, recall, F1 score
 In our study, results of transfer learnings are better than the scratch training. Training ResNet18 from scratch achieved 75.40% accuracy while in it jumps drastically to 98.20% and 93.00% in Deep tune and finetune respectively. Moreover, It takes less time for training. MobileNetV2 has achieved 96% accuracy on both methods.
 </p>
 
-![](Images/tuning.png)
+![](Graphs/tuning.png)
 
 | Architecture		 | Dataset   | Testing Acc |Precision|Recall  |F1-Scores    |Training time| Method  |
 | -----------------------|-----------|-------------|---------|--------|-------------|-------------|---------|

@@ -94,6 +94,7 @@ how well they perform on test data. The sensitivity or recall corresponds to the
 <p align="justify">
 ResNet18, ShuffleNetV2 and MobileNetV2 are three models which has been used for this study for performance comparision on different datasets. 
 </p>
+
 Directory structure:
 Here each models are in respective folder. For example, MobilenetV2 contains 3 scripts. each prefix suggets the datatset name. dataset1_mobilenetv2.ipynb is training and testing file for mobilenetv2 on dataset1.
 ```
@@ -163,9 +164,10 @@ Here each models are in respective folder. For example, MobilenetV2 contains 3 s
 |   data_cleaning_and_splitting.ipynb
 |   README.md
 |   requirements.txt
-
 ```
+
 For training , 
+
 ```
 pip install -r requirements.txt
 ```

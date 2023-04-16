@@ -68,11 +68,88 @@ Dataset 3: https://www.kaggle.com/datasets/piyushkumar18/animal-image-classifica
 <p align="justify">
 ResNet18, ShuffleNetV2 and MobileNetV2 are three models which has been used for this study for performance comparision on different datasets. 
 </p>
+Directory structure:
 
+```
+Folder PATH listing
+Volume serial number is 8429-11B1
+C:.
++---MobilenetV2
+|       dataset1_mobilenetv2.ipynb
+|       dataset2_mobilenetv2.ipynb
+|       dataset3_mobilenetv2.ipynb
+|       
++---Resnet18
+|       dataset1_Resnet18.ipynb
+|       dataset2_Resnet18.ipynb
+|       dataset3_Resnet18.ipynb
+|
++---ShuffleNetV2
+|       dataset1_ShufflenetV2.ipynb
+|       dataset2_ShufflenetV2.ipynb
+|       dataset3_ShufflenetV2.ipynb
+|       
+\---Transfer Learning
+    +---DeepTune
+    |       deeptunedataset1_Resnet18.ipynb
+    |       deeptune_dataset1_mobilenetv2.ipynb
+    |       
+    \---FineTune
+            Finetunedataset1_Resnet18.ipynb
+            Finetune_dataset1_mobilenetv2.ipynb
+|   
++---Checkpoints
+|       dataset1_Mobilenetv2_checkpoint.ckpt
+|       dataset2_Mobilenetv2_checkpoint.ckpt
+|       
++---Final_Dataset
+|   +---test
+|   |   +---Cat
+|   |   \---Dog
+|   +---train
+|   |   +---Cat
+|   |   \---Dog
+|   \---val
+|       +---Cat
+|       \---Dog
++---Graphs
+|       Accuracy.png
+|       cnf.png
+|       dataset_sample_img.png
+|       Loss.png
+|       tSNE.png
+|       tuning.png
+|       
++---Results
+|       dataset1_Mobilenet_history.csv
+|       dataset1_Resnet18_history.csv
+|       dataset1_Shufflenetv2_history.csv
+|       dataset2_Mobilenet_history.csv
+|       dataset2_Resnet18_history.csv
+|       dataset2_Shufflenetv2_history.csv
+|       dataset3_Mobilenet_history.csv
+|       dataset3_Resnet18_history.csv
+|       dataset3_Shufflenetv2_history.csv
+|       dataset3_Shufflenet_history.csv
+|       deeptunedataset1_Mobilenet_history.csv
+|       deeptunedataset1_Resnet18_history.csv
+|       finetunedataset1_Mobilenet_history.csv
+|       finetunedataset1_Resnet18_history.csv
+|       
++---Runs
+|   data_cleaning_and_splitting.ipynb
+|   README.md
+|   requirements.txt
+
+            
+
+```
 For training , 
 ```
-	run pip install requirements.txt
+pip install -r requirements.txt
 ```
+
+
 
 ## 6. Experiment Setup
 

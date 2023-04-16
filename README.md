@@ -24,6 +24,8 @@ The second dataset, Dataset 2, was provided by a user named Saumil Agrawal in 20
 
 The third dataset, Dataset 3, was created by Kaggle user Piyush Kumar in 2019. It contains approximately 17,200 images of various animals, including butterfly, cats, cows, elephants, hens, horses, monkeys, pandas, sheep, spiders, squirrels, among others. Size of the images are ranging from 201 x 300 to 500 x 374 pixels.
 
+![](Images/dataset_sample_img.png)
+
 ## 3. Pros and Cons of existing solutions
 
 ### Pros
@@ -35,6 +37,36 @@ the same image differently, leading to potential inconsistencies and biases.
 ## 4. CNN Models
 
 ResNet18, ShuffleNetV2 and MobileNetV2 are three models which has been used for this study for performance comparision on different datasets. 
+
+The architecture of ResNet18 [2] consists of a series of convolutional layers, followed by a global average pooling layer and a fully connected output layer with softmax activation. The ResNet18 [2] architecture consists of 18 layers, including convolutional layers, max-pooling layers, fully connected layers, and shortcut connections. The shortcut connections allow the network to bypass some of the layers, which helps to mitigate the vanishing gradient
+problem and makes it easier to train very deep neural networks.
+
+MobileNetV2 is a lightweight neural network architecture designed for mobile and embedded vision applications. The architecture can be divided into three main parts: the stem, the body, and the head. It uses inverted residual blocks. Inverted residual blocks are composed of three components: a linear bottleneck layer, a non-linear activation function, and a linear projection layer.
+
+The ShuffleNetV2 architecture is composed of several building blocks, including the channel shuffle operation, depthwise separable convolution, and residual connections. The channel shuffle operation is a key component of the ShuffleNetV2 [3]architecture, and it allows for information exchange between channels while reducing computation.
+
+## 5. Experiment Setup
+
+
+|  	Hyper Parameters	         |Used Hyper Parameter       |
+| -----------------------|---------|
+| Optimizer   | Adam	  |	
+| Loss Function | Cross Entropy Loss    
+| Batch Size   | 32
+| Epochs | 30
+
+### Hardware Configuration
+
+Hardware:- Training these CNN architectures is extremely computationally intensive. Therefore, all the experiments are carried out on a Google collab and Microsoft Azure. Microsoft Azure has 6 cores ,56 GB ram,12 GB NVIDIA TESLA K80 GPU WITH 380 GB disk space and Google collab has 13 GB Ram ,15 GB GPU WITH 79.2GB Disk space.
+
+### Evaluation
+
+The performance of the proposed method is evaluated by comparing the different models with different metrics. The quality CNN model is evaluated using the
+how well they perform on test data. The sensitivity or recall corresponds to the accuracy of positive examples, and it refers to how many examples of the positive classes were labeled correctly. Precision measure is about correctness. It is how “precise” the model is out of those predicted positive and how many of them are actually positive. F-score is determined as the harmonic mean precision and recall. 
+
+## 6. Main Results
+
+Below graph shows the loss of the Architecture on each dataset. Models with lower training loss are better as they are able to fit the training data more accurately. It is clear that MobileNetV2 has lowest training loss in all datasets.
 
 ## 3.Methodology:
 

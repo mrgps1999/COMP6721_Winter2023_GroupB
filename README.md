@@ -4,14 +4,12 @@
 
 Efficient and reliable monitoring of wild animals in their Natural habitats is essential to inform conservation and management decisions regarding wildlife species, migration patterns, and habitat protection, and is possible, rehabilitation and grouping species of the same animals together. Processing a large volume of images and videos captured from camera traps manually is extremely expensive, time consuming, and monotonous. This presents a major obstacle to scientists and ecologists to monitor wildlife in an open environment.
 
-Processing a large volume of images and videos captured from camera traps manually is extremely expensive, time-consuming, and monotonous.
-This presents a major obstacle to scientists and ecologists to monitor wildlife in an open environment. Images captured in a field represent a challenging task while classifying since they appear in a different pose, cluttered background, different lighting and climatic conditions, human photographic
-errors, different angles, and occlusions.
+Processing a large volume of images and videos captured from camera traps manually is extremely expensive, time-consuming, and monotonous. This presents a major obstacle to scientists and ecologists to monitor wildlife in an open environment. Images captured in a field represent a challenging task while classifying since they appear in a different pose, cluttered background, different lighting and climatic conditions, human photographic errors, different angles, and occlusions.
 
 
 ## 2.	Dataset Selection selection 
 
-There are many datasets available for the animal classification datasets among that we selected below 2 datasets with different classes and different number of images per class.
+There are many datasets available for the animal classification datasets among that we selected below 3 datasets with different classes and different number of images per class.
 
 | Info 		         |Dataset 1|Dataset 2|Dataset 3|
 | -----------------------|---------|---------|---------|
@@ -20,8 +18,11 @@ There are many datasets available for the animal classification datasets among t
 | Modified Categories.   | 2| 5| 12| 
 | Modified No. Categories| 5k| 10K| 15K|
 
-NAME AND THEIR CLASSES
+The first dataset, called Dataset 1, contains approximately 25,000 RGB images of dogs and cats with varying pixel resolutions, ranging from 320 x 200 to 498 x 480 pixels.  Originally created by Microsoft Research for a Kaggle competition in 2013, we modified this dataset and selected 5,000 images for our training. Images within this dataset are in .jpg format.
 
+The second dataset, Dataset 2, was provided by a user named Saumil Agrawal in 2018. This dataset contains around 15,100 images of 25 different animal classes, with a fixed pixel resolution of 1280 x 720 pixels. We observed that this dataset was highly imbalanced, with some classes having only 60 images. To avoid potential bias towards certain classes, we selected only 5 classes with a larger number of images.
+
+The third dataset, Dataset 3 [10], was created by Kaggle user Piyush Kumar in 2019. It contains approximately 17,200 images of various animals, including butterfly, cats, cows, elephants, hens, horses, monkeys, pandas, sheep, spiders, squirrels, among others. Size of the images are ranging from 201 x 300 to 500 x 374 pixels.
 
 ## 3.Methodology:
 

@@ -2,17 +2,23 @@
 
 ## 1.	Problem Statement and Introduction:
 
-Research indicates that our species are facing a biodiversity crisis and a human-caused global mass extinction event. Threats to endangered wildlife species must be eradicated in order to preserve biodiversity. The fragmentation and destruction of habitat, the overuse of resources and human-caused climate change are some of the main causes of extinction and biodiversity loss. Popular wildlife conservation programs use camera-trap studies, in which motion-activated cameras are set up at study sites to record images of moving animals. The resulting images are then applied in a variety of ways, including tracking specific animals, estimating species richness and abundance, and maintaining an eye for invasive species. These conventional methods of animal observation, such as track censuses or direct counts, all of these applications are intrusive, expensive, and takes time. Animal classification application refer to software tools or systems used to identify and categorize different species of animals. We proposed Animal classification using convolution neural network and for that we are going to use 3 Datasets with different classes and 3 CNN architectures like ResNet18, MobilenetV2, DenseNet121. Moreover, we will use two models for transfer learning. To, evaluate all this models, we are going to use different evaluation metric. Main challenge in animal classification is unbalanced dataset. Secondly, Quality of images is second major issue. To elaborate, some dataset has images which are less than 200X200. These applications can be used for scientific research, wildlife management, and monitoring. 
+Efficient and reliable monitoring of wild animals in their Natural habitats is essential to inform conservation and management decisions regarding wildlife species, migration patterns, and habitat protection, and is possible, rehabilitation and grouping species of the same animals together. Processing a large volume of images and videos captured from camera traps manually is extremely expensive, time consuming, and monotonous. This presents a major obstacle to scientists and ecologists to monitor wildlife in an open environment.
 
-## 2.	Image data selection 
+Processing a large volume of images and videos captured from camera traps manually is extremely expensive, time-consuming, and monotonous.
+This presents a major obstacle to scientists and ecologists to monitor wildlife in an open environment. Images captured in a field represent a challenging task while classifying since they appear in a different pose, cluttered background, different lighting and climatic conditions, human photographic
+errors, different angles, and occlusions.
+
+
+## 2.	Dataset Selection selection 
 
 There are many datasets available for the animal classification datasets among that we selected below 2 datasets with different classes and different number of images per class.
 
-|Name 		|Number of Images|	 Classes|   format|    link| 
+|Info 		|Dataset 1|	 Dataset 2|   Dataset 3|
 |---------------|----------------|---------------|--------|--------|
-|Animal		|15.1k|25 |jpg| |		|
-|Animal Image dataset| 17.2k|12|jpg| |
-|Kaggle cats and dogs| 24.9k|2|jpg | |
+|Original  Categories 		|2|25 |12| |		|
+|Original No. of Images| 25k|15.1K|17.2K| |
+|Modified Categories| 2|5|12| |
+|Modified No. Categories| 5k|10K|15K | |
 
 NAME AND THEIR CLASSES
 

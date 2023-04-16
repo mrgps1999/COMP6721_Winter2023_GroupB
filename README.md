@@ -33,6 +33,17 @@ The third dataset, Dataset 3, was created by Kaggle user Piyush Kumar in 2019. I
 </p>
 
 
+**Link to download the datasets.**
+
+
+Dataset 1: https://www.kaggle.com/competitions/dogs-vs-cats
+
+Dataset 2: https://www.kaggle.com/datasets/saumilagrawal10/animal-image-dataset-resized
+
+Dataset 3: https://www.kaggle.com/datasets/piyushkumar18/animal-image-classification-dataset
+
+
+
 ![](Images/dataset_sample_img.png)
 
 

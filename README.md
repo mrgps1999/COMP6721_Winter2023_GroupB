@@ -13,12 +13,12 @@ errors, different angles, and occlusions.
 
 There are many datasets available for the animal classification datasets among that we selected below 2 datasets with different classes and different number of images per class.
 
-|Info 		        |Dataset 1|Dataset 2|Dataset 3|
-|-----------------------|---------|---------|---------|
-|Original  Categories   |	  |25       |.        |		
-|Original No. of Images | 25k.    |15.1K.   |	      |
-|Modified Categories.   | 2|5|12| 
-|Modified No. Categories| 5k|10K|15K|
+| Info 		         |Dataset 1|Dataset 2|Dataset 3|
+| -----------------------|---------|---------|---------|
+| Original  Categories   | 2	  |25       | 12       |		
+| Original No. of Images | 25k    | 15.1K   | 17.2K   |
+| Modified Categories.   | 2| 5| 12| 
+| Modified No. Categories| 5k| 10K| 15K|
 
 NAME AND THEIR CLASSES
 

@@ -42,13 +42,16 @@ The third dataset, Dataset 3, was created by Kaggle user Piyush Kumar in 2019. I
 <p align="justify">
 	These datasets have some noise. We have cleaned the dataset and after that we have split these datasets into training, validation and testing set. Training set has been used for training the dataset and testing as well as validation set has been used for the evaluation of the dataset.
 </p>
+
 **Data Processing:**
 
+<p align="justify">
 	Resize: consists of variable-resolution images, while our system requires a constant input dimensionality. There for we have down sampled the 			images to fixed resolution which is suitable for architecture.
 	Tensor: convert the NumPy images to torch images.
 	Normalize: change the range of pixels.
 	ColorJitter: To generate images with randomly brightness contrast and saturation 
-
+</p>
+	
 ## 4. Pros and Cons of existing solutions
 
 ***Pros***
@@ -65,13 +68,16 @@ the same image differently, leading to potential inconsistencies and biases.
 <p align="justify">
 ResNet18, ShuffleNetV2 and MobileNetV2 are three models which has been used for this study for performance comparision on different datasets. 
 </p>
+
 <p align="justify">
 The architecture of ResNet18 [2] consists of a series of convolutional layers, followed by a global average pooling layer and a fully connected output layer with softmax activation. The ResNet18 [2] architecture consists of 18 layers, including convolutional layers, max-pooling layers, fully connected layers, and shortcut connections. The shortcut connections allow the network to bypass some of the layers, which helps to mitigate the vanishing gradient
 problem and makes it easier to train very deep neural networks.
 </p>
+
 <p align="justify">
 MobileNetV2 is a lightweight neural network architecture designed for mobile and embedded vision applications. The architecture can be divided into three main parts: the stem, the body, and the head. It uses inverted residual blocks. Inverted residual blocks are composed of three components: a linear bottleneck layer, a non-linear activation function, and a linear projection layer.
 </p>
+
 <p align="justify">
 The ShuffleNetV2 architecture is composed of several building blocks, including the channel shuffle operation, depthwise separable convolution, and residual connections. The channel shuffle operation is a key component of the ShuffleNetV2 [3]architecture, and it allows for information exchange between channels while reducing computation.
 </p>
@@ -100,28 +106,38 @@ Hardware:- Training these CNN architectures is extremely computationally intensi
 The performance of the proposed method is evaluated by comparing the different models with different metrics. The quality CNN model is evaluated using the
 how well they perform on test data. The sensitivity or recall corresponds to the accuracy of positive examples, and it refers to how many examples of the positive classes were labeled correctly. Precision measure is about correctness. It is how “precise” the model is out of those predicted positive and how many of them are actually positive. F-score is determined as the harmonic mean precision and recall. 
 </p>
+
 ## 7. Main Results
+
 <p align="justify">
 Below graph shows the loss of the Architecture on each dataset. Models with lower training loss are better as they are able to fit the training data more accurately. It is clear that MobileNetV2 has lowest training loss in all datasets.
 </p>
+
 ![](Images/Loss.png)
+
 <p align="justify">
 Below graph shows the accuracy of the model on the training data over a time. ShuffleNetV2 and MobileNeV2 achieved almost 98% traning accuracy while
 ResNet18 did not perform well. It is underfitted. The model cannot capture the underlying patterns and instead makes a high error assumption about the data.
 </p>
 
 ![](Images/Accuracy.png)
+
 <p align="justify">
 Plotting the high-dimensional representations of the data points in a low-dimensional space using t-SNE.
 </p>
+
 ![](Images/tSNE.png)
+
 <p align="justify">
 Distribution of Datapoints after classification using Confusion Matrix.
 </p>
+
 ![](Images/cnf.png)
+
 <p align="justify">
 The models were evaluated based on testing accuracy, precision, recall, F1 scores, and training time. The MobileNetV2 architecture achieved the highest testing accuracy among all architectures on all three datasets. On Dataset1, MobileNetV2 achieved the highest testing accuracy of 87.60%, followed by ShuffleNetV2 with an accuracy of 82%, and ResNet18 with a low accuracy of 75.40%. On Dataset2, MobileNetV2 achieved an accuracy of 80.22%, followed by ShuffleNetV2 with an accuracy of 79.82%, and ResNet18 with an accuracy of 61.71%. Finally, on Dataset3, MobileNetV2 again achieved the highest accuracy of 73.69%, followed by ShuffleNetV2 with an accuracy of 72.98%, and ResNet18 with an accuracy of 53.50%. More Details for Precision, Recall is given in table.
 </p>
+
 | Architecture		 | Dataset   | Testing Acc |Precision|Recall  |F1-Scores    |Training time|
 | -----------------------|-----------|-------------|---------|--------|-------------|-------------|
 | MobileNetV2            | Dataset 1 | 87.60       | 88	     |  88    | 87          |  36 min     |		
@@ -137,6 +153,7 @@ The models were evaluated based on testing accuracy, precision, recall, F1 score
 <p align="justify">
 In our study, results of transfer learnings are better than the scratch training. Training ResNet18 from scratch achieved 75.40% accuracy while in it jumps drastically to 98.20% and 93.00% in Deep tune and finetune respectively. Moreover, It takes less time for training. MobileNetV2 has achieved 96% accuracy on both methods.
 </p>
+
 ![](Images/tuning.png)
 
 | Architecture		 | Dataset   | Testing Acc |Precision|Recall  |F1-Scores    |Training time| Method  |

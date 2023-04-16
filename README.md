@@ -56,12 +56,16 @@ The third dataset, Dataset 3, was created by Kaggle user Piyush Kumar in 2019. I
 
 ***Pros***
 
+<p align="justify">
 One of the biggest pros of existing manual animal classification is their ability to provide accurate results. Trained experts in animal classification can achieve high levels of accuracy, especially for challenging or novel species. Humans can adapt to new situations and recognize new animals without requiring extensive retraining.
+</p>
 
 ***Cons***
 
+<p align="justify">
 Manual classification is a timeconsuming process that requires significant human effort, limiting its scalability. Different individuals may classify
 the same image differently, leading to potential inconsistencies and biases.
+</p>
 
 ## 5. CNN Models
 

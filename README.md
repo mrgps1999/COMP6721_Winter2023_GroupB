@@ -35,7 +35,6 @@ The third dataset, Dataset 3, was created by Kaggle user Piyush Kumar in 2019. I
 
 **Link to download the datasets.**
 
-
 Dataset 1: https://www.kaggle.com/competitions/dogs-vs-cats
 
 Dataset 2: https://www.kaggle.com/datasets/saumilagrawal10/animal-image-dataset-resized
@@ -63,39 +62,17 @@ Dataset 3: https://www.kaggle.com/datasets/piyushkumar18/animal-image-classifica
 	ColorJitter: To generate images with randomly brightness contrast and saturation 
 </p>
 	
-## 4. Pros and Cons of existing solutions
 
-***Pros***
-
-<p align="justify">
-One of the biggest pros of existing manual animal classification is their ability to provide accurate results. Trained experts in animal classification can achieve high levels of accuracy, especially for challenging or novel species. Humans can adapt to new situations and recognize new animals without requiring extensive retraining.
-</p>
-
-***Cons***
-
-<p align="justify">
-Manual classification is a timeconsuming process that requires significant human effort, limiting its scalability. Different individuals may classify
-the same image differently, leading to potential inconsistencies and biases.
-</p>
-
-## 5. CNN Models
+## 4. How to train?
 
 <p align="justify">
 ResNet18, ShuffleNetV2 and MobileNetV2 are three models which has been used for this study for performance comparision on different datasets. 
 </p>
 
-<p align="justify">
-The architecture of ResNet18 [2] consists of a series of convolutional layers, followed by a global average pooling layer and a fully connected output layer with softmax activation. The ResNet18 [2] architecture consists of 18 layers, including convolutional layers, max-pooling layers, fully connected layers, and shortcut connections. The shortcut connections allow the network to bypass some of the layers, which helps to mitigate the vanishing gradient
-problem and makes it easier to train very deep neural networks.
-</p>
-
-<p align="justify">
-MobileNetV2 is a lightweight neural network architecture designed for mobile and embedded vision applications. The architecture can be divided into three main parts: the stem, the body, and the head. It uses inverted residual blocks. Inverted residual blocks are composed of three components: a linear bottleneck layer, a non-linear activation function, and a linear projection layer.
-</p>
-
-<p align="justify">
-The ShuffleNetV2 architecture is composed of several building blocks, including the channel shuffle operation, depthwise separable convolution, and residual connections. The channel shuffle operation is a key component of the ShuffleNetV2 [3]architecture, and it allows for information exchange between channels while reducing computation.
-</p>
+For training , 
+```
+	run pip install requirements.txt
+```
 
 ## 6. Experiment Setup
 

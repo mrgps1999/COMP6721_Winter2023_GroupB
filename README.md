@@ -63,17 +63,40 @@ Dataset 3: https://www.kaggle.com/datasets/piyushkumar18/animal-image-classifica
 </p>
 	
 
-## 4. How to train?
+
+## 4. Experiment Setup
+
+<p align="justify">
+
+|  	Hyper Parameters	         |Used Hyper Parameter       |
+| -----------------------|---------|
+| Optimizer   | Adam	  |	
+| Loss Function | Cross Entropy Loss    
+| Batch Size   | 32
+| Epochs | 30
+</p>
+
+### Hardware Configuration
+
+<p align="justify">
+Hardware:- Training these CNN architectures is extremely computationally intensive. Therefore, all the experiments are carried out on a Google collab and Microsoft Azure. Microsoft Azure has 6 cores , 56 GB ram, 12 GB NVIDIA TESLA K80 GPU WITH 380 GB disk space and Google collab has 13 GB Ram ,15 GB GPU WITH 79.2GB Disk space.
+</p>
+
+### Evaluation
+
+<p align="justify">
+The performance of the proposed method is evaluated by comparing the different models with different metrics. The quality CNN model is evaluated using the
+how well they perform on test data. The sensitivity or recall corresponds to the accuracy of positive examples, and it refers to how many examples of the positive classes were labeled correctly. Precision measure is about correctness. It is how “precise” the model is out of those predicted positive and how many of them are actually positive. F-score is determined as the harmonic mean precision and recall. 
+</p>
+
+## 5. How to train?
 
 <p align="justify">
 ResNet18, ShuffleNetV2 and MobileNetV2 are three models which has been used for this study for performance comparision on different datasets. 
 </p>
 Directory structure:
-
+Here each models are in respective folder. For example, MobilenetV2 contains 3 scripts. each prefix suggets the datatset name. dataset1_mobilenetv2.ipynb is training and testing file for mobilenetv2 on dataset1.
 ```
-Folder PATH listing
-Volume serial number is 8429-11B1
-C:.
 +---MobilenetV2
 |       dataset1_mobilenetv2.ipynb
 |       dataset2_mobilenetv2.ipynb
@@ -141,42 +164,26 @@ C:.
 |   README.md
 |   requirements.txt
 
-            
-
 ```
 For training , 
 ```
 pip install -r requirements.txt
 ```
+Go to respective models folder and run the ipynb file using google collab, jupyter notebook or any other framework and run the code.
+Final_Dataset contains sample images for training cnn architectures.
+
+For testing purpose you can use pretrained model which is in Checkpoints folder.
+Results folder contains training loss, accuracy , validation accuracy on each ephoch for all models.
+
+For visualize the training loss, validation loss and training accuracy graph run following command in terminal.
+
+```
+tensorboard --logdir Runs
+```
+This will give a link for tensorboar summary.
 
 
-
-## 6. Experiment Setup
-
-<p align="justify">
-
-|  	Hyper Parameters	         |Used Hyper Parameter       |
-| -----------------------|---------|
-| Optimizer   | Adam	  |	
-| Loss Function | Cross Entropy Loss    
-| Batch Size   | 32
-| Epochs | 30
-</p>
-
-### Hardware Configuration
-
-<p align="justify">
-Hardware:- Training these CNN architectures is extremely computationally intensive. Therefore, all the experiments are carried out on a Google collab and Microsoft Azure. Microsoft Azure has 6 cores , 56 GB ram, 12 GB NVIDIA TESLA K80 GPU WITH 380 GB disk space and Google collab has 13 GB Ram ,15 GB GPU WITH 79.2GB Disk space.
-</p>
-
-### Evaluation
-
-<p align="justify">
-The performance of the proposed method is evaluated by comparing the different models with different metrics. The quality CNN model is evaluated using the
-how well they perform on test data. The sensitivity or recall corresponds to the accuracy of positive examples, and it refers to how many examples of the positive classes were labeled correctly. Precision measure is about correctness. It is how “precise” the model is out of those predicted positive and how many of them are actually positive. F-score is determined as the harmonic mean precision and recall. 
-</p>
-
-## 7. Main Results
+## 6. Main Results
 
 <p align="justify">
 Below graph shows the loss of the Architecture on each dataset. Models with lower training loss are better as they are able to fit the training data more accurately. It is clear that MobileNetV2 has lowest training loss in all datasets.

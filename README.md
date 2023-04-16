@@ -62,8 +62,6 @@ Dataset 3: https://www.kaggle.com/datasets/piyushkumar18/animal-image-classifica
 	ColorJitter: To generate images with randomly brightness contrast and saturation 
 </p>
 	
-
-
 ## 4. Experiment Setup
 
 <p align="justify">
@@ -171,8 +169,7 @@ For training ,
 ```
 pip install -r requirements.txt
 ```
-Go to respective models folder and run the ipynb file using google collab, jupyter notebook or any other framework and run the code.
-Final_Dataset contains sample images for training cnn architectures.
+Go to respective models folder and run the ipynb file using google collab, jupyter notebook or any other framework and run the code.You can provide your dataset path inside the code.Here, i have attacged Final_Dataset which contains sample images for training cnn architectures.
 
 For testing purpose you can use pretrained model which is in Checkpoints folder.
 Results folder contains training loss, accuracy , validation accuracy on each ephoch for all models.

@@ -138,6 +138,8 @@ Distribution of Datapoints after classification using Confusion Matrix.
 The models were evaluated based on testing accuracy, precision, recall, F1 scores, and training time. The MobileNetV2 architecture achieved the highest testing accuracy among all architectures on all three datasets. On Dataset1, MobileNetV2 achieved the highest testing accuracy of 87.60%, followed by ShuffleNetV2 with an accuracy of 82%, and ResNet18 with a low accuracy of 75.40%. On Dataset2, MobileNetV2 achieved an accuracy of 80.22%, followed by ShuffleNetV2 with an accuracy of 79.82%, and ResNet18 with an accuracy of 61.71%. Finally, on Dataset3, MobileNetV2 again achieved the highest accuracy of 73.69%, followed by ShuffleNetV2 with an accuracy of 72.98%, and ResNet18 with an accuracy of 53.50%. More Details for Precision, Recall is given in table.
 </p>
 
+
+
 | Architecture		 | Dataset   | Testing Acc |Precision|Recall  |F1-Scores    |Training time|
 | -----------------------|-----------|-------------|---------|--------|-------------|-------------|
 | MobileNetV2            | Dataset 1 | 87.60       | 88	     |  88    | 87          |  36 min     |		
@@ -149,6 +151,7 @@ The models were evaluated based on testing accuracy, precision, recall, F1 score
 | ResNet18		 | Dataset 1 | 75.40       | 76      |  75    | 75          |  21 min     |		
 | 			 | Dataset 2 | 61.71       | 67      |	56    | 61 	    |  1.1 hour   |
 | 		         | Dataset 3 | 53.50	   | 52      |	54    | 53	    |  1.3 hour   |
+
 
 <p align="justify">
 In our study, results of transfer learnings are better than the scratch training. Training ResNet18 from scratch achieved 75.40% accuracy while in it jumps drastically to 98.20% and 93.00% in Deep tune and finetune respectively. Moreover, It takes less time for training. MobileNetV2 has achieved 96% accuracy on both methods.
